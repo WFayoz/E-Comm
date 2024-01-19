@@ -1,0 +1,609 @@
+@import './container';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #262626;
+}
+li{
+    list-style: none;
+    list-style-position: outside;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: #fff;
+    position: sticky;
+    top: -110px;
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation__up{
+        width: 100%;
+        display: flex;
+        padding-top: 51px;
+        align-items: center;
+        justify-content: space-between;
+        .currency{
+            display: flex;
+            gap: 13px;
+            h1{ 
+                gap: 5px;
+                display: flex;
+                text-align: center;
+                color: #262626;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .profile__info{
+            align-items: center;
+            justify-content: center;
+            ul{
+                display: flex;
+                gap: 25px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                li{
+                    a{
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                        color: #262626;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    display: flex;
+                    list-style: none;
+                    list-style-position: inside;
+                   
+                }
+            }
+        }
+
+
+    }
+    .navigation__down{
+        padding-top: 45px;
+        padding-bottom: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav__logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            }
+        }
+        .nav__list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 97px;
+                li{
+                    a{
+                        color: #262626;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    a:hover{
+                        color: #40BFFF;
+                        transition: 0.18s;
+                    }
+                }
+            }
+        }
+    }
+}
+.hero{
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+    background-image: url(../assets/sneaker.png);
+    background-repeat: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    .hero__text{
+        padding-top: 258px;
+        padding-bottom: 166px;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        h1{
+            color: #fff;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0.5px;
+            width: 573.169px;
+            height: 228.49px;
+            flex-shrink: 0;
+        }
+    }
+}
+.banner{
+    width: 100%;
+    &__boxes{
+        position: relative;
+        z-index: -1;
+        padding-top: 590px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        .banner__box--left{
+            background-image: url(../assets/crossbag.png);
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .banner__box--up{
+                padding-left: 52px;
+                padding-top: 29px;
+                padding-bottom: 214px;
+                padding-right: 22px;
+                display: flex;
+                gap: 22px;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    width: 202px;
+                    color: var(--Neutral-Dark, #223263);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 30px */
+                    letter-spacing: 0.5px;
+                }
+                h2{
+                    color: var(--Primary-Blue, #40BFFF);
+                    font-family: Raleway;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 180%; /* 54px */
+                    letter-spacing: 0.5px;
+                }
+
+            }
+            .banner__box--down{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding-bottom: 30px;
+                del{
+                    color: var(--Neutral-Grey, #9098B1);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 27px */
+                    letter-spacing: 0.5px;
+                    text-decoration-line: strikethrough;
+                }
+                h6{
+                    color: var(--Primary-Red, #FB7181);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; 
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+        .banner__box--middle{
+            background-image: url(../assets/nikeairyel.png);
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .banner__box--up{
+                padding-left: 52px;
+                padding-top: 29px;
+                padding-bottom: 214px;
+                padding-right: 22px;
+                display: flex;
+                gap: 22px;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    width: 202px;
+                    color: var(--Neutral-Dark, #223263);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 30px */
+                    letter-spacing: 0.5px;
+                }
+                h2{
+                    color: var(--Primary-Blue, #40BFFF);
+                    font-family: Raleway;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 180%; /* 54px */
+                    letter-spacing: 0.5px;
+                }
+
+            }
+            .banner__box--down{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding-bottom: 30px;
+                del{
+                    color: var(--Neutral-Grey, #9098B1);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 27px */
+                    letter-spacing: 0.5px;
+                    text-decoration-line: strikethrough;
+                }
+                h6{
+                    color: var(--Primary-Red, #FB7181);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; 
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+        .banner__box--right{
+            background-image: url(../assets/nikeairred.png);
+            border-radius: 5px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .banner__box--up{
+                padding-left: 52px;
+                padding-top: 29px;
+                padding-bottom: 214px;
+                padding-right: 22px;
+                display: flex;
+                gap: 22px;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    width: 202px;
+                    color: var(--Neutral-Dark, #223263);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 30px */
+                    letter-spacing: 0.5px;
+                }
+                h2{
+                    color: var(--Primary-Blue, #40BFFF);
+                    font-family: Raleway;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 180%; /* 54px */
+                    letter-spacing: 0.5px;
+                }
+
+            }
+            .banner__box--down{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding-bottom: 30px;
+                del{
+                    color: var(--Neutral-Grey, #9098B1);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 27px */
+                    letter-spacing: 0.5px;
+                    text-decoration-line: strikethrough;
+                }
+                h6{
+                    color: var(--Primary-Red, #FB7181);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; 
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
+.bestseller{
+    padding-top: 63px;
+    width: 100%;
+    .best_seller{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: #22262A;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        ul{
+            padding-top: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            li{
+                a{
+                    color: #262626;
+                    font-family: Poppins;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                a:hover{
+                    color: #33A0FF;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .best__seller--boxes{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 41px;
+            .best__seller--boxes__top{
+                padding-top: 23px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                div{
+                    border-radius: 10px;
+                    border: 3px solid #F6F7F8;
+                    stroke: #F6F7F8;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 299px;
+                        height: 272px;
+                        flex-shrink: 0;
+                    }
+                    h1{
+                        padding-top: 14px;
+                        padding-bottom: 7px;
+                        color: var(--Neutral-Dark, #223263);
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
+                        letter-spacing: 0.5px;
+                    }
+                    .discount{
+                        border: none;
+                        padding-top: 6px;
+                        padding-bottom: 11px;
+                        display: flex;
+                        flex-direction: row;
+                        // gap: 15px;
+                        h5{
+                            color: var(--Primary-Blue, #40BFFF);
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 180%; 
+                            letter-spacing: 0.5px;
+                        }
+                        del{
+                            padding-left: 13px;
+                            color: var(--Neutral-Grey, #9098B1);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%; 
+                            letter-spacing: 0.5px;
+                            text-decoration-line: strikethrough;
+                        }
+                        h6{
+                            padding-left: 8px;
+                            color: var(--Primary-Red, #FB7181);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%; 
+                            letter-spacing: 0.5px;
+                        }
+                    }
+                }
+            }
+            .best__seller--boxes__bottom{
+
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                padding-bottom: 29px;
+                div{
+                    border-radius: 10px;
+                    border: 3px solid #F6F7F8;
+                    stroke: #F6F7F8;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 299px;
+                        height: 272px;
+                        flex-shrink: 0;
+                    }
+                    h1{
+                        padding-top: 14px;
+                        padding-bottom: 7px;
+                        color: var(--Neutral-Dark, #223263);
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%;
+                        letter-spacing: 0.5px;
+                    }
+                    .discount{
+                        border: none;
+                        padding-top: 6px;
+                        padding-bottom: 11px;
+                        display: flex;
+                        flex-direction: row;
+                        // gap: 15px;
+                        h5{
+                            color: var(--Primary-Blue, #40BFFF);
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 180%; 
+                            letter-spacing: 0.5px;
+                        }
+                        del{
+                            padding-left: 13px;
+                            color: var(--Neutral-Grey, #9098B1);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%; 
+                            letter-spacing: 0.5px;
+                            text-decoration-line: strikethrough;
+                        }
+                        h6{
+                            padding-left: 8px;
+                            color: var(--Primary-Red, #FB7181);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%; 
+                            letter-spacing: 0.5px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+        h2{
+            padding-bottom: 123px;
+            a{    
+                color: #262626;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            a:hover{
+                color: #33A0FF;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.why_us{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            padding-top: 45px;
+            padding-bottom: 137px;
+            color: #22262A;
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+.inputbox{
+    padding-bottom: 107px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    div{
+        border: 2px solid #40BFFF;
+        display: flex;
+        padding-left: 20px;
+        align-items: center;
+        justify-content: space-between;
+        input{
+            border: none;
+            outline: none;
+        }
+        button{
+            cursor: pointer;
+            border: none;
+            background-color: #40BFFF;
+            margin-left: 300px;
+            color: #FFF;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding: 17px 27px;
+        }
+
+    }
+}
+.blue{
+    height: 680px;
+    background: #BCDDFE;
+}
