@@ -605,9 +605,119 @@ nav .navigation__down .nav__list ul li a:hover {
   padding: 17px 27px;
 }
 
-.blue {
-  height: 680px;
-  background: #BCDDFE;
+footer {
+  width: 100%;
+  background-color: #BCDDFE;
+}
+footer .footer__top {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 290px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer__top .footer__top--left {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+footer .footer__top .footer__top--left div {
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__top .footer__top--left div a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+footer .footer__top .footer__top--left div a h1 {
+  padding-left: 7px;
+  color: #22262A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+footer .footer__top .footer__top--left p {
+  color: #22262A;
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footer__top .footer__top--center {
+  width: 198px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__top .footer__top--center h6 {
+  color: #22262A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .footer__top .footer__top--center p {
+  padding-top: 19px;
+  color: #22262A;
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footer__top .footer__top--center span {
+  padding-top: 22px;
+  display: flex;
+  gap: 39px;
+}
+footer .footer__top .footer__top--right {
+  width: 148.109px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__top .footer__top--right h5 {
+  color: #22262A;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .footer__top .footer__top--right p {
+  padding-top: 19px;
+  color: #22262A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footer__line {
+  border: 1px solid #F6F7F8;
+}
+footer .footer__bottom {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 54px;
+}
+footer .footer__bottom h6 {
+  color: #C1C8CE;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footer__bottom span {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
